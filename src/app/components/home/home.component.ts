@@ -32,27 +32,27 @@ export class HomeComponent implements OnInit {
     initDatastructures() {
         this.datastructures = [
             {
-                'name': 'Linked Lists',
+                'name': 'Linked Lists (coming-soon)',
                 'link': 'linked-list'
             },
             {
-                'name': 'Array',
+                'name': 'Array (coming-soon)',
                 'link': 'array'
             },
             {
-                'name': 'Heap',
+                'name': 'Heap (coming-soon)',
                 'link': 'heaps'
             },
             {
-                'name': 'Queue',
+                'name': 'Queue (coming-soon)',
                 'link': 'queue'
             },
             {
-                'name': 'Stack',
+                'name': 'Stack (coming-soon)',
                 'link': 'stack'
             },
             {
-                'name': 'Tree',
+                'name': 'Tree (coming-soon)',
                 'link': 'tree'
             }
         ]
@@ -60,11 +60,11 @@ export class HomeComponent implements OnInit {
     initAlgorithms() {
         this.algorithms = [
             {
-                'name': 'Search',
+                'name': 'Search (coming-soon)',
                 'link': 'search'
             },
             {
-                'name': 'Sort',
+                'name': 'Sort (coming-soon)',
                 'link': 'sort'
             }
         ]
