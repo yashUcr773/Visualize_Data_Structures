@@ -1,1 +1,27 @@
-<p>linked-list works!</p>
+<div class="container">
+    <div class="header">
+        <h1 class="title">Linked Lists</h1>
+        <p class="desc">Implementation of a singly linked list</p>
+        <div class="inputs-container">
+            <div class="add form">
+                <label for="add-input">Enter a number to Add to the list</label>
+                <input id="add-input">
+                <button (click)="addToList()">Add to List</button>
+            </div>
+            <div class="search form">
+                <label for="search-input">Enter a number to search in the list</label>
+                <input id="search-input">
+                <button (click)="searchList()">Search the List</button>
+            </div>
+            <div class="delete form">
+                <label for="delete-input">Enter number to delete from list</label>
+                <input id="delete-input">
+                <button (click)="deleteFromList()">Delete from List</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="content" id="linked-list-content">
+        <div class="linked-list-konva-container"></div>
+    </div>
+</div>
