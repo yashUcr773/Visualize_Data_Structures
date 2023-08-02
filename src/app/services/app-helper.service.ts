@@ -16,4 +16,8 @@ export class AppHelperService {
             elem.click();
         }
     }
+
+    generateRandomNumbers(low: number, high: number) {
+        return Math.floor(Math.random() * (high - low)) + low;
+    }
 }

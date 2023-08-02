@@ -1,0 +1,144 @@
+.sorting-container {
+    width: 100%;
+    padding: 12px;
+    margin: 24px auto;
+    border: 2px solid red;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 600px) {
+        width: 90%;
+    }
+
+    @media (min-width: 900px) {
+        width: 80%;
+    }
+
+    .header {
+        border: 2px solid blue;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .title {
+            margin: 0px;
+        }
+
+        .desc {
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+
+        .inputs-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+            align-items: flex-start;
+
+            .numbers-input {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 32px;
+
+                .input-section {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    label {
+                        font-weight: 700;
+                    }
+
+                    input {
+                        margin: 0 8px;
+                    }
+                }
+
+            }
+
+            .algorithm-input {
+                p {
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+
+                select {
+                    width: fit-content;
+                    height: 48px;
+                    padding: 8px;
+                    font-size: 1.2em;
+                    border-radius: 16px;
+                }
+            }
+
+            .start-sorting {
+                padding: 8px;
+                width: fit-content;
+                height: fit-content;
+                border-radius: 8px;
+                border: 2px solid;
+                outline: none;
+                margin: auto;
+            }
+        }
+
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+    }
+
+    .content {
+        border: 2px solid blue;
+        width: 100%;
+        height: 100%;
+
+        #divs-container {
+            border: 2px solid blue;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: flex-end;
+            justify-content: center;
+
+            .sortingTower {
+                height: var(--height);
+                flex: 1 1 0;
+                background-color: red;
+
+                &.swap-start {
+                    background-color: blue;
+                }
+
+                &.compare-start {
+                    background-color: #70E6D2;
+                }
+
+                &.correct {
+                    background-color: green;
+                }
+
+                &.temp-hold {
+                    background-color: #D6D6FF;
+                }
+
+            }
+        }
+    }
+
+
+
+}

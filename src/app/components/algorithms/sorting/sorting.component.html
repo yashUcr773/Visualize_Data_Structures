@@ -1,1 +1,41 @@
-<p>sorting works!</p>
+<div class="sorting-container">
+    <div class="header">
+        <h1 class="title">Sorting Algorithms</h1>
+        <p class="desc">Visualize Different sorting algorithms.</p>
+        <div class="inputs-container">
+            <div class="numbers-input">
+                <div class="input-section" [ngClass]="{'disabled':sortingInProgress}">
+                    <label for="numbers">Numbers count</label>
+                    <input type="range" id="sorting-numbers" name="numbers" min="10" max="60" step="10" value="30"
+                        (input)="updateNumbersSliderValue()">
+                    <p>{{numbersValue}} numbers</p>
+                </div>
+
+                <div class="input-section">
+                    <label for="delay">Delay</label>
+                    <input type="range" id="sorting-delay" name="delay" min="10" max="1000" step="50" value="200"
+                        (input)="updateDelaySliderValue()">
+                    <p>{{delayValue}} ms</p>
+                </div>
+            </div>
+            <div class="algorithm-input" [ngClass]="{'disabled':sortingInProgress}">
+                <p>Algorithm Selector</p>
+                <select id="sorting-algorithm-select">
+                    <option value="1">Bubble Sort</option>
+                    <option value="2" selected>Insertion Sort</option>
+                    <option value="3" >Selection Sort</option>
+                    <option value="4">Merge Sort</option>
+                    <option value="5">Quick Sort</option>
+                </select>
+            </div>
+            <button class="start-sorting" (click)="startSorting()" [ngClass]="{'disabled':sortingInProgress}">Start
+                Sorting</button>
+        </div>
+
+    </div>
+    <div class="content" id="sorting-content">
+        <div id="divs-container">
+
+        </div>
+    </div>
+</div>
